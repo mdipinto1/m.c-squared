@@ -5,6 +5,7 @@ __pycache__/
 Clean_Data/London_AirBNB_Data.csv
 Clean_Data/London_Starbucks_Data.csv
 Raw_Data/london_listings.csv
+london_airbnb.html
 # C extensions
 *.so
 
