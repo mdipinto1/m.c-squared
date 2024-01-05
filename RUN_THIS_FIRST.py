@@ -3,7 +3,7 @@ import zipfile
 
 #Extracts oversized files for execution
 #Adds london_airbnb.html to gitignore automatically
-files_extracted = ['./london_airbnb.html']
+files_extracted = ['./denver_airbnb.html', './london_airbnb.html']
 
 
 #Extracts London AirBnb data, if not already extracted
