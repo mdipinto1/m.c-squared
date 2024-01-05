@@ -3,9 +3,10 @@ import zipfile
 
 #Extracts oversized files for execution
 #Adds london_airbnb.html to gitignore automatically
-
 files_extracted = ['./london_airbnb.html']
 
+
+#Extracts London AirBnb data, if not already extracted
 destination_file = './Clean_Data/London_AirBNB_Data.csv'
 if not os.path.exists(destination_file):
     file_to_unzip = './Clean_Data/London_AirBNB_Data.zip'
@@ -16,6 +17,8 @@ if not os.path.exists(destination_file):
     print(f"{file_to_unzip} extracted successfully")
 else: print(f"{destination_file} already present.")
 
+
+#Extracts London Starbucks data, if not already extracted
 destination_file = './Clean_Data/London_Starbucks_Data.csv'
 if not os.path.exists(destination_file):
     file_to_unzip = './Clean_Data/London_Starbucks_Data.zip'
@@ -26,6 +29,8 @@ if not os.path.exists(destination_file):
     print(f"{file_to_unzip} extracted successfully")
 else: print(f"{destination_file} already present.")
 
+
+#Extracts london_listings, if not already extracted
 destination_file = './Raw_Data/london_listings.csv'
 if not os.path.exists(destination_file):
     file_to_unzip = './Raw_Data/london_listings.zip'
@@ -36,6 +41,9 @@ if not os.path.exists(destination_file):
     print(f"{file_to_unzip} extracted successfully")
 else: print(f"{destination_file} already present.")
 
+
+#Opens .gitignore as read, checks .gitignore for presence of files
+#Appends files that were extracted above and are not already present to .gitignore
 with open('.gitignore', "r") as file:
     lines_for_gitignore = []
     lines = file.readlines()
@@ -50,8 +58,7 @@ with open('.gitignore', "r") as file:
         else: print(f"{file_name} already in .gitignore")
 file.close()
 
-
-
+#Opens .gitignore as append and writes each file from lines_for_gitignore
 with open('.gitignore', 'a') as file:
     for file_name in lines_for_gitignore:
         file.write('\n'+file_name.lstrip('./'))
