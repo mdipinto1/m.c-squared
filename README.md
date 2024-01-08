@@ -6,7 +6,7 @@ First Group Project
 * It is recommended not to run the data_cleaning_notebook files as execution typically takes 15 minutes for the denver area and 2+ hours for London.
 * Prior to executing the data analysis notebooks, run RUN_THIS_FIRST.py, it will extract necessary files and update the .gitignore file appropriately
 
-Project #1: Exploring the Relationship Between Airbnb & Starbucks
+Class Project #1: Exploring the Relationship Between Airbnb & Starbucks
 
 Introduction:  Project 1 for AI Bootcamp.  
 This is the first project for the first class of AI Bootcamp (running October 2023 – April 2024). We were assigned team members by instructor and were given a list of potential datasets that might be interesting to explore. We choose Airbnb and Starbucks.  The following class periods (and time out of class) was spent downloading the data, cleaning the data and exploring the data.  Finally, we agreed upon our findings and determined how we would present our results. 
@@ -25,9 +25,8 @@ Table of Contents
 10.	Lessons Learned
 11.	Resources & Articles
 12.	Learning Goals
-13.	Instructions
 
-1.	 Instructions:  
+1. Instructions:  
 •	Avoid running the data_cleaning_notebook files as they are time-consuming (15 minutes for Denver, 2+ hours for London).
 •	Run RUN_THIS_FIRST.py before the data analysis notebooks to extract necessary files and update the .gitignore file.
 
@@ -51,7 +50,6 @@ Exploring the intriguing relationship between Airbnb and Starbucks. Why these tw
 •	Beginning with a simpler market (Denver) for initial analysis.
 
 6. Real-world Application
-
 Client: A semi-retired actor seeking a stable investment in Airbnb properties.
 Goal: Determine the viability and optimal market for investment.
 
