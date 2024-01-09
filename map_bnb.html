@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c54faaf791e11b3af2f955d6f71baaa3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c54faaf791e11b3af2f955d6f71baaa3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c54faaf791e11b3af2f955d6f71baaa3 = L.map(
+                "map_c54faaf791e11b3af2f955d6f71baaa3",
+                {
+                    center: [39.76502, -105.03364],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cf6e73efbb592afd636b850f4f70b1a6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cf6e73efbb592afd636b850f4f70b1a6.addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var marker_c8ce751d08c8c4f435e07214032798aa = L.marker(
+                [39.76672, -104.97906],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_3c3e68ed09ffe717554bbb42d26d1f64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c8ce751d08c8c4f435e07214032798aa.setIcon(icon_3c3e68ed09ffe717554bbb42d26d1f64);
+        
+    
+        var popup_11020b38cdfd842aef94f5aee1fb4c13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_beab5d20e3630db2b4377128daf26849 = $(`<div id="html_beab5d20e3630db2b4377128daf26849" style="width: 100.0%; height: 100.0%;">Top 1 -- Five Points</div>`)[0];
+                popup_11020b38cdfd842aef94f5aee1fb4c13.setContent(html_beab5d20e3630db2b4377128daf26849);
+            
+        
+
+        marker_c8ce751d08c8c4f435e07214032798aa.bindPopup(popup_11020b38cdfd842aef94f5aee1fb4c13)
+        ;
+
+        
+    
+    
+            var marker_e68fe9be25bb3bb856a781660e8e459b = L.marker(
+                [39.76502, -105.03364],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_e8a3d07345bee1b066f73ef4cdb6bd70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e68fe9be25bb3bb856a781660e8e459b.setIcon(icon_e8a3d07345bee1b066f73ef4cdb6bd70);
+        
+    
+        var popup_b46158d7eecb61a2c4e0e8dd8c101348 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e6e351ff6bccacbfa7c281e8944d972 = $(`<div id="html_7e6e351ff6bccacbfa7c281e8944d972" style="width: 100.0%; height: 100.0%;">Top 3 -- Northwest</div>`)[0];
+                popup_b46158d7eecb61a2c4e0e8dd8c101348.setContent(html_7e6e351ff6bccacbfa7c281e8944d972);
+            
+        
+
+        marker_e68fe9be25bb3bb856a781660e8e459b.bindPopup(popup_b46158d7eecb61a2c4e0e8dd8c101348)
+        ;
+
+        
+    
+    
+            var marker_2844f58de1d3fe546439f24754c7bcf1 = L.marker(
+                [39.70719, -105.01878],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_4ea1023d5c13a68774d76145643a195d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2844f58de1d3fe546439f24754c7bcf1.setIcon(icon_4ea1023d5c13a68774d76145643a195d);
+        
+    
+        var popup_de2927d7d281beaebb74ae0dc89459d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ef34d0ff8d64cffff14622749c6f7ee = $(`<div id="html_2ef34d0ff8d64cffff14622749c6f7ee" style="width: 100.0%; height: 100.0%;">Top 5 -- West</div>`)[0];
+                popup_de2927d7d281beaebb74ae0dc89459d8.setContent(html_2ef34d0ff8d64cffff14622749c6f7ee);
+            
+        
+
+        marker_2844f58de1d3fe546439f24754c7bcf1.bindPopup(popup_de2927d7d281beaebb74ae0dc89459d8)
+        ;
+
+        
+    
+    
+            var marker_3a1aee06e24ba3d49e3a3fa4b91e4d3e = L.marker(
+                [39.75684, -104.85525],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_d357228149a8096495cae741af9e6df4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3a1aee06e24ba3d49e3a3fa4b91e4d3e.setIcon(icon_d357228149a8096495cae741af9e6df4);
+        
+    
+        var popup_d76ec9ab12d957ce991a99515b35c6a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb10a69ec9ce73548730c7ad23990a25 = $(`<div id="html_fb10a69ec9ce73548730c7ad23990a25" style="width: 100.0%; height: 100.0%;">Top 4 -- Northeast</div>`)[0];
+                popup_d76ec9ab12d957ce991a99515b35c6a7.setContent(html_fb10a69ec9ce73548730c7ad23990a25);
+            
+        
+
+        marker_3a1aee06e24ba3d49e3a3fa4b91e4d3e.bindPopup(popup_d76ec9ab12d957ce991a99515b35c6a7)
+        ;
+
+        
+    
+    
+            var marker_f603bf13aea4dc1cfd42f9c45bb52aeb = L.marker(
+                [39.766414642333984, -105.0020980834961],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_2df928096026123e5e0b1b345d3155cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f603bf13aea4dc1cfd42f9c45bb52aeb.setIcon(icon_2df928096026123e5e0b1b345d3155cf);
+        
+    
+        var popup_a1a8409c214a316d1e48dca554adc9ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_576d16634efbc9bc2e612ab99b3294a3 = $(`<div id="html_576d16634efbc9bc2e612ab99b3294a3" style="width: 100.0%; height: 100.0%;">Top 2 -- Highland</div>`)[0];
+                popup_a1a8409c214a316d1e48dca554adc9ab.setContent(html_576d16634efbc9bc2e612ab99b3294a3);
+            
+        
+
+        marker_f603bf13aea4dc1cfd42f9c45bb52aeb.bindPopup(popup_a1a8409c214a316d1e48dca554adc9ab)
+        ;
+
+        
+    
+    
+            tile_layer_cf6e73efbb592afd636b850f4f70b1a6.addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            tile_layer_cf6e73efbb592afd636b850f4f70b1a6.addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var marker_ce7c0ab91bd68ec5c5efbc3e8b9c1603 = L.marker(
+                [51.55237, -0.19954],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_2a8c29ccf2949a49729eadf97da5b6ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ce7c0ab91bd68ec5c5efbc3e8b9c1603.setIcon(icon_2a8c29ccf2949a49729eadf97da5b6ff);
+        
+    
+        var popup_2d0f9b14c0b6263f8a6c9eda3b592e71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb8976b7de15b96c202896edc40f4d9d = $(`<div id="html_bb8976b7de15b96c202896edc40f4d9d" style="width: 100.0%; height: 100.0%;">Top 3 -- Hampstead</div>`)[0];
+                popup_2d0f9b14c0b6263f8a6c9eda3b592e71.setContent(html_bb8976b7de15b96c202896edc40f4d9d);
+            
+        
+
+        marker_ce7c0ab91bd68ec5c5efbc3e8b9c1603.bindPopup(popup_2d0f9b14c0b6263f8a6c9eda3b592e71)
+        ;
+
+        
+    
+    
+            var marker_87f17f9bbca2c2c66a05108914631fd6 = L.marker(
+                [51.52425, -0.06997],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_bde4684b44aacb133e337e7c8fcc9e21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_87f17f9bbca2c2c66a05108914631fd6.setIcon(icon_bde4684b44aacb133e337e7c8fcc9e21);
+        
+    
+        var popup_b1995eceb47c81816c6f5df7c4652b21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16e6fc2bcf40e56c855ecbe7807540a9 = $(`<div id="html_16e6fc2bcf40e56c855ecbe7807540a9" style="width: 100.0%; height: 100.0%;">Top 5 -- Shoreditch</div>`)[0];
+                popup_b1995eceb47c81816c6f5df7c4652b21.setContent(html_16e6fc2bcf40e56c855ecbe7807540a9);
+            
+        
+
+        marker_87f17f9bbca2c2c66a05108914631fd6.bindPopup(popup_b1995eceb47c81816c6f5df7c4652b21)
+        ;
+
+        
+    
+    
+            var marker_653875774e88566da0badeaace6b3c51 = L.marker(
+                [51.53031, -0.21713],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_7ad2f390a0a26fdcbb20a6d26b35455a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_653875774e88566da0badeaace6b3c51.setIcon(icon_7ad2f390a0a26fdcbb20a6d26b35455a);
+        
+    
+        var popup_e1e9a58ba4dfee550ac6fef683298425 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4606888651a455996ccc86f3059c875 = $(`<div id="html_c4606888651a455996ccc86f3059c875" style="width: 100.0%; height: 100.0%;">Top 4 -- LB of Brent</div>`)[0];
+                popup_e1e9a58ba4dfee550ac6fef683298425.setContent(html_c4606888651a455996ccc86f3059c875);
+            
+        
+
+        marker_653875774e88566da0badeaace6b3c51.bindPopup(popup_e1e9a58ba4dfee550ac6fef683298425)
+        ;
+
+        
+    
+    
+            var marker_9fa2f8333fbce6d5bec6f7bcc299a270 = L.marker(
+                [51.56861, -0.1127],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_eb365d44c3ce01bd6cd36deaeec2c3cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9fa2f8333fbce6d5bec6f7bcc299a270.setIcon(icon_eb365d44c3ce01bd6cd36deaeec2c3cb);
+        
+    
+        var popup_9ece3e80e8d9b6af0a5a9506e9651f0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff7f89896eb62e7ab015cb5108184bb1 = $(`<div id="html_ff7f89896eb62e7ab015cb5108184bb1" style="width: 100.0%; height: 100.0%;">Top 2 -- LB of Islington</div>`)[0];
+                popup_9ece3e80e8d9b6af0a5a9506e9651f0a.setContent(html_ff7f89896eb62e7ab015cb5108184bb1);
+            
+        
+
+        marker_9fa2f8333fbce6d5bec6f7bcc299a270.bindPopup(popup_9ece3e80e8d9b6af0a5a9506e9651f0a)
+        ;
+
+        
+    
+    
+            var marker_33b2ba6fd70272254b059b7478dabc86 = L.marker(
+                [51.58478, -0.16057],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_4bd18fb4a446d86120da265aecea9eec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_33b2ba6fd70272254b059b7478dabc86.setIcon(icon_4bd18fb4a446d86120da265aecea9eec);
+        
+    
+        var popup_5239e87866c5b9c95605df632c814f25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f31c03113c77fe556bd3188355cb2ae = $(`<div id="html_1f31c03113c77fe556bd3188355cb2ae" style="width: 100.0%; height: 100.0%;">Top 1 -- LB of Haringey</div>`)[0];
+                popup_5239e87866c5b9c95605df632c814f25.setContent(html_1f31c03113c77fe556bd3188355cb2ae);
+            
+        
+
+        marker_33b2ba6fd70272254b059b7478dabc86.bindPopup(popup_5239e87866c5b9c95605df632c814f25)
+        ;
+
+        
+    
+    
+            tile_layer_cf6e73efbb592afd636b850f4f70b1a6.addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            tile_layer_cf6e73efbb592afd636b850f4f70b1a6.addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var marker_9d6d2051334b38bb260a0f5212adab1e = L.marker(
+                [51.55237, -0.19954],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_7d9e35537a8889df2baf430f4cbaa232 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9d6d2051334b38bb260a0f5212adab1e.setIcon(icon_7d9e35537a8889df2baf430f4cbaa232);
+        
+    
+        var popup_0ac712831edddb9d1bc96bfccd17bee9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfdc30779de60fdd1571b701e0882306 = $(`<div id="html_dfdc30779de60fdd1571b701e0882306" style="width: 100.0%; height: 100.0%;">Top 3 -- Hampstead</div>`)[0];
+                popup_0ac712831edddb9d1bc96bfccd17bee9.setContent(html_dfdc30779de60fdd1571b701e0882306);
+            
+        
+
+        marker_9d6d2051334b38bb260a0f5212adab1e.bindPopup(popup_0ac712831edddb9d1bc96bfccd17bee9)
+        ;
+
+        
+    
+    
+            var marker_087bb6e9a8c7c5ef9cf41876a008d6d8 = L.marker(
+                [51.52425, -0.06997],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_1764359412cab029d9651967e020ca0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_087bb6e9a8c7c5ef9cf41876a008d6d8.setIcon(icon_1764359412cab029d9651967e020ca0c);
+        
+    
+        var popup_2ac89d5fcbb829bbc0bd9169cb93c4b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1db8cf9c179b0022501e8957c4ae5938 = $(`<div id="html_1db8cf9c179b0022501e8957c4ae5938" style="width: 100.0%; height: 100.0%;">Top 5 -- Shoreditch</div>`)[0];
+                popup_2ac89d5fcbb829bbc0bd9169cb93c4b1.setContent(html_1db8cf9c179b0022501e8957c4ae5938);
+            
+        
+
+        marker_087bb6e9a8c7c5ef9cf41876a008d6d8.bindPopup(popup_2ac89d5fcbb829bbc0bd9169cb93c4b1)
+        ;
+
+        
+    
+    
+            var marker_5f07f456dd9b2bcd7e2924676d90a24b = L.marker(
+                [51.53031, -0.21713],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_714d7d9ef4ee57074b7cd8e489a45d81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5f07f456dd9b2bcd7e2924676d90a24b.setIcon(icon_714d7d9ef4ee57074b7cd8e489a45d81);
+        
+    
+        var popup_22d82c182b44fda7aa3561c8ebafabfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f024b3c3d14ec093047f73515b03fbdc = $(`<div id="html_f024b3c3d14ec093047f73515b03fbdc" style="width: 100.0%; height: 100.0%;">Top 4 -- LB of Brent</div>`)[0];
+                popup_22d82c182b44fda7aa3561c8ebafabfa.setContent(html_f024b3c3d14ec093047f73515b03fbdc);
+            
+        
+
+        marker_5f07f456dd9b2bcd7e2924676d90a24b.bindPopup(popup_22d82c182b44fda7aa3561c8ebafabfa)
+        ;
+
+        
+    
+    
+            var marker_4e84bfe342f5c2e54494bd925f1deacb = L.marker(
+                [51.56861, -0.1127],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_0490ebc1b1d1e9521838f7c7bc9605f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4e84bfe342f5c2e54494bd925f1deacb.setIcon(icon_0490ebc1b1d1e9521838f7c7bc9605f7);
+        
+    
+        var popup_9fcec83ee1fc2f2c8c8eb2cbe14b82e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a24ae764daf3ee6e4e0cd62a2886005d = $(`<div id="html_a24ae764daf3ee6e4e0cd62a2886005d" style="width: 100.0%; height: 100.0%;">Top 2 -- LB of Islington</div>`)[0];
+                popup_9fcec83ee1fc2f2c8c8eb2cbe14b82e4.setContent(html_a24ae764daf3ee6e4e0cd62a2886005d);
+            
+        
+
+        marker_4e84bfe342f5c2e54494bd925f1deacb.bindPopup(popup_9fcec83ee1fc2f2c8c8eb2cbe14b82e4)
+        ;
+
+        
+    
+    
+            var marker_299c692b2218e84ef941c467585dd9a1 = L.marker(
+                [51.58478, -0.16057],
+                {"color": "#3186cc", "fillColor": "#3186cc", "radius": 500}
+            ).addTo(map_c54faaf791e11b3af2f955d6f71baaa3);
+        
+    
+            var icon_c68f69a81bb4d40db3676c0d75beef87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_299c692b2218e84ef941c467585dd9a1.setIcon(icon_c68f69a81bb4d40db3676c0d75beef87);
+        
+    
+        var popup_f9fb0c52f49d85df9722cbea6d61cc9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9231fa1cef22ff066fc20147a0ce4aa7 = $(`<div id="html_9231fa1cef22ff066fc20147a0ce4aa7" style="width: 100.0%; height: 100.0%;">Top 1 -- LB of Haringey</div>`)[0];
+                popup_f9fb0c52f49d85df9722cbea6d61cc9c.setContent(html_9231fa1cef22ff066fc20147a0ce4aa7);
+            
+        
+
+        marker_299c692b2218e84ef941c467585dd9a1.bindPopup(popup_f9fb0c52f49d85df9722cbea6d61cc9c)
+        ;
+
+        
+    
+</script>
+</html>
