@@ -1,4 +1,4 @@
-# m.c-squared
+# mc squared
 First Group Project
 
 ## Instructions
@@ -13,7 +13,7 @@ This is the first project for the first class of AI Bootcamp (running October 20
 
 Table of Contents
 
-1.	Instructions
+1.	Agenda
 2.	Team Members
 3.	Project Overview
 4.	Questions to Explore
@@ -26,9 +26,8 @@ Table of Contents
 11.	Resources & Articles
 12.	Learning Goals
 
-1. Instructions:  
-•	Avoid running the data_cleaning_notebook files as they are time-consuming (15 minutes for Denver, 2+ hours for London).
-•	Run RUN_THIS_FIRST.py before the data analysis notebooks to extract necessary files and update the .gitignore file.
+
+1. Agenda
 
 2. Team
 •	Matt Dipinto: Git Master, Data Cleanser, Plot Master
